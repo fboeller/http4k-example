@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+    <title>Person Administrator</title>
+    <link rel="stylesheet" href="/ui/css/Persons.css">
+</head>
+<body>
+<ul>
+    {{#each persons}}
+        <li>{{this.name}}</li>
+    {{/each}}
+</ul>
+<form action="/ui/persons" method="post">
+    Name:
+    <input type="text" name="name" value="Albert">
+    <input type="submit" value="Add">
+</form>
+</body>
+</html>
